@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+	<title>Bucle infinito - Solicitar número</title>
+    
+	<style>
+        body {
+            font-family:Arial,sans-serif;
+            text-align:center;
+        }
+		input,button {
+			font-size:20px;
+            margin-top:20px;
+		}
+		#resultado {
+            margin-top:20px;
+            font-weight:bold;
+		}
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Bucle infinito </h1>
+    <button onclick="solicitarNumero()">Iniciar bucle</button>
+
+    <script>
+        function solicitarNumero() {
+            let input;
+            while (true) {
+                input = prompt("Introduzca un número o escribe 'salir' para detener el bucle:", "");
+                if (input === "salir") {
+                    break;
+                }
+
+				if (!isNaN(parseInt(input))) {
+                    console.log("Número introducido:",input);
+                } else {
+                    alert("Por favor, introduzca un número válido.");
+                } 
+
+				
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

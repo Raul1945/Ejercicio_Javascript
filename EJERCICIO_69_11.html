@@ -1,0 +1,19 @@
+﻿<!Doctype html>
+<html lang= "es">
+<body>
+<center><h1>Suma de los cuadrados</h1>
+<div id = "numeros"></div>
+<div id = "resultado" ></div></center>
+
+
+<script>
+const numbers = [5,4,8,6,2]
+const reduceValue = numbers.reduce((suma,number) => (suma + number**2),0);//0 = valor inicial
+document.getElementById('numeros').innerText = 'Los numeros del array son: ' + numbers.join();// el jpin nos genera una cadena de numeros con comas
+
+
+document.getElementById('resultado').innerText ='El resultado es ' +reduceValue;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Eventos de Teclado en JavaScript </title>
+  </head>
+
+<body>
+  <div id="mensaje"></div>
+
+<script>
+function mostrarMensaje(codigo)
+const mensaje = document.getElementById("mensaje")
+mensaje.innerHTML = `Presionaste la tecla con codigo ${codigo}`;}
+
+document.addEvenListenner("keydown", function (event) {
+const codigo = event.key;
+mostarMensaje(codigo);});
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

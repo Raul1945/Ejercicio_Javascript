@@ -1,0 +1,62 @@
+﻿<!Doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Verificar si un número es par o impar</title>
+<style>
+body{font-family:verdana;}
+imput,button{font-size: 32px;}
+</style>
+</head>
+<body>
+ <h1>Verificar si un número es par o impar</h1>
+ <input type="number" id="entradaNumero" placeholder="Introduce un número">
+ <button onclick="verificarNumero()">Verificar</button>
+ <p id="resultado"></p>
+ 
+ <script>
+  function verificarNumero()
+ {const entradaNumero = document.getElementById('entradaNumero');
+  const resultado = document.getElementById('resultado');
+  const numero = parseInt(entradaNumero.value, 10);
+ if (numero % 2 === 0 ){ resultado.innerHTML = 'El número introducido es par';}
+ else { resultado.innerHTML = 'El número introducido es impar';}
+}
+
+ </script>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

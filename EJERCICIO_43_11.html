@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Leer archivo</title>
+
+</head>
+
+<body>
+    
+	<h1>Lector de archivos</h1>
+    <input type="file" id="inputArchivo" />
+    <div id="contenido"></div>
+
+    <script>
+        document.getElementById('inputArchivo').addEventListener('change', function(evento) {
+            let archivo = evento.target.files[0];
+            let contenido = document.getElementById('contenido');
+            
+            if (archivo) {
+                let lector = new FileReader();
+                
+                lector.onload = function(e) {
+                    contenido.innerHTML = e.target.result;
+                };
+                
+                lector.onerror = function() {
+                    contenido.innerHTML = 'EXCEPCIÓN: error_de_lectura';
+                };
+                
+                lector.readAsText(archivo);
+            } else {
+                contenido.innerHTML = 'EXCEPCIÓN: archivo_no_encontrado';
+            }
+        });
+    </script>
+	
+</body>
+
+</html>

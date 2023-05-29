@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Eventos de Teclado en JavaScript (II) - Abecedario y Números</title>
+  
+  <style>
+    body {
+      font-family:Arial,sans-serif;
+    }
+    #mensaje {
+      font-size:24px;
+      font-weight:bold;
+      color:#333;
+      margin-top:50px;
+      text-align:center;
+    }
+  </style>
+  
+  <script type="text/javascript">
+    function mostrarMensaje(tecla) {
+      const mensaje = document.getElementById("mensaje");
+      if ((tecla >= 'a' && tecla <= 'z') || (tecla >= 'A' && tecla <= 'Z') || (tecla >= '0' && tecla <= '9') || tecla === 'Ñ' || tecla === 'ñ') {
+        mensaje.innerHTML = `¡Presionaste la tecla ${tecla.toUpperCase()}!`;
+      } else {
+        mensaje.innerHTML = "";
+      }
+    }
+
+    document.addEventListener("keydown", function (event) {
+      const tecla = event.key;
+      mostrarMensaje(tecla);
+    });
+  </script>
+
+<!-- Cuando se presione una de las teclas del abecedario, un número o la tecla "Ñ|ñ", se mostrará un mensaje personalizado en el elemento <div> con el ID "mensaje". -->
+  
+</head>
+
+<body>
+
+  <div id="mensaje"></div>
+  
+</body>
+
+</html>

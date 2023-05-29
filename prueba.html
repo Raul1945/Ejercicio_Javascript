@@ -1,0 +1,28 @@
+﻿<!Doctype html>
+<html lang= "es">
+<body>
+<center><h1>Repeticion de los números del array</h1>
+<div id = "items"></div>
+<div id = "resultado"></div>
+<script>
+const numbers = [];
+const arrayLength = 8;
+
+for (let i = 0; i < arrayLength; i++) {
+const randomNumber = Math.floor(Math.random()*10)+1;
+numbers.push(randomNumber);}
+
+const frecuencias = numbers.reduce((objeto, elemento)=> {//objeto hace de acumulador 
+if (!objeto[elemento]){
+objeto[elemento] = 1}
+else{
+objeto[elemento] = objeto[elemento] +1}
+return objeto},{})
+document.getElementById('items').innerText = 'Los numeros del array son: ' + numbers.join();// el jpin nos genera una cadena de numeros con comas
+
+
+document.getElementById('resultado').innerText ='El resultado es ' +frecuencias;
+
+</script>
+</body>
+</html>

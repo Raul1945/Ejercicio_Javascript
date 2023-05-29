@@ -1,0 +1,47 @@
+﻿<!Doctype html>
+<html lang= "es">
+<body>
+<center><h1>Suma de los cuadrados</h1>
+<div id = "numeros"></div>
+<div id = "resultado" ></div></center>
+
+
+<script>
+const numbers = [5,4,8,6,2]
+let suma = 0;
+for (let i =0; i <numbers.length; i++) {
+const number = numbers[i];
+suma = suma + number **2;
+}
+document.getElementById('numeros').innerText = 'Los numeros del array son: ' + numbers.join();// el jpin nos genera una cadena de numeros con comas
+
+
+document.getElementById('resultado').innerText ='El resultado es ' +suma;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+
+
+
+
+
+
+</html>

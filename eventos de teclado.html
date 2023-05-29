@@ -1,0 +1,65 @@
+﻿<!Doctype html>
+<html>
+<head>
+<style></style>
+
+</head>
+<body>
+<center><h1>eventos de teclado</h1>
+<div id="mensaje"></div></center>
+<script>
+
+function mostrarMensaje(tecla){
+const mensaje=document.getElementbyId("mensaje");
+switch(tecla){
+  case "a":
+  mensaje.innerHTML= "la letra introducida es la a";
+  break;
+  case "e":
+ mensaje.innerHTML=  "la letra introducida es la e";
+  break;
+  case "i":
+  mensaje.innerHTML=  "la letra introducida es la 1";
+  break;
+  case "o":
+  mensaje.innerHTML=  "la letra introducida es la o";
+  break;
+  case "u":
+ mensaje.innerHTML=  "la letra introducida es la u";
+  break;
+  default:
+ mensaje.innerHTML= "letra no válida";}}
+
+ document.addEventListener("keydown",function (event){
+const tecla = event.key.toLowerCase();
+mostrarMensaje(tecla);});
+ 
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

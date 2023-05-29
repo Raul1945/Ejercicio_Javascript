@@ -1,0 +1,25 @@
+﻿<!Doctype html>
+<html lang= "es">
+<body>
+<center><h1>Método Burbuja</h1>
+<div id = "items"></div>
+<script>
+const numbers = [6,5,3,1,8,7,2,4];
+function(numbers){
+for (let i =0; i <numbers.length; i++) {
+const number = numbers[i];}
+for(var j=0; j  numbers[j + 1]) {
+       if(numbers[j]>numbers[j+1]){
+         var jp = numbers[j]; 
+         numbers[j] = numbers[j + 1]; 
+         numbers[j + 1] = jp;
+       }      
+     }
+   
+   
+}
+  document.getElementById('items').innerText ='El resultado es ' +numbers;
+  
+  </script>
+  </body>
+  </html>

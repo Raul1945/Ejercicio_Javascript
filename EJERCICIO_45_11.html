@@ -1,0 +1,41 @@
+﻿<!Doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Multiplicacion</title>
+	<style>
+		body {
+			font-family: verdana;
+		}
+
+		imput,
+		button {
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Tabla de multiplicar</h1>
+	
+	<p id="resultado"></p>
+
+<script>
+window.onload = function() {
+mostrarTablas();}
+
+function mostrarTablas() {
+let resultado = "";
+for (let numero = 1; numero <=10; numero++) {
+     resultado += "<h3>Tabla del " + numero + "<h3>";
+	 for (let i = 1; i <= 10; i++) {
+	      resultado = resultado.concat(numero," x ",i," = ", numero * i, "<br>"); }
+		  }
+		 document.getElementbyId("resultado").innerHTML = resultado; }
+		 
+
+</script>
+
+</body>
+</html>

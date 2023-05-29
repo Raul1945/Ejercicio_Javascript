@@ -1,0 +1,29 @@
+﻿<!Doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Comprueba tu nota</title>
+<style>
+body{font-family:verdana;}
+imput,button{font-size: 16px;}
+</style>
+</head>
+<body>
+ <h1>Evaluacion Examen</h1>
+ <input type="number" id="nota" min="0" max="20">
+ <button onclick="verificarNumero()">Verificar</button>
+ <p id="resultado"></p>
+ <script>
+  function verificarNumero()
+ {const nota = parseInt(document.getElementById('nota').value);
+  const resultado = document.getElementById('resultado');
+  
+  if (nota >=0 && nota <=20){
+  if (nota >=10){ resultado.innerHTML = 'ENHORABUENA';}
+  else{ resultado.innerHTML = 'ESFUERZATE MÁS';}
+  else{ resultado.innerHTML = 'introduzca un valor válido';}
+  }
+  </script>
+  </body>
+  </html>
+  

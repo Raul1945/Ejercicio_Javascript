@@ -1,0 +1,59 @@
+﻿<!Doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Numeros Primos</title>
+	<style>
+		body {
+			font-family: verdana;
+		}
+
+		imput,
+		button {
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Numeros primos</h1>
+	<input type="number" id="numero" placeholder="introduce un numero" >
+	<button onclick="primo()">Comprobar</button>
+	<p id="resultado"></p>
+	
+	<script>
+	function primo() {
+	const numero = document.getElementById("numero").value;
+	const resultado = document.getElementById("resultado");
+	let esPrimo = true;
+	
+	
+   if (numero < 2) {
+   esPrimo = false;}
+    else{
+   for(let i = 2; i <numero; i++) {
+   if(numero % i ===0) {
+   esPrimo= false;
+    break;
+	}
+	}
+	}
+	if(esPrimo) {
+	resultado.innerHTML = "El número " + numero + " es primo ";
+	}
+	else{ resultado.innerHTML =  "El número " + numero + " no es primo";
+	}
+	}
+	</script>
+	
+
+   
+	
+	
+	
+	
+	
+	
+	
+	</script>

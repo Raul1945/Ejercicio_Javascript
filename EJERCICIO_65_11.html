@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+	
+	<meta charset="UTF-8">
+    <title>Validación de Edad</title>
+
+    <style>
+		body {
+			font-family:Arial,sans-serif;
+			text-align:center;
+		}
+		input,button {
+			font-size:20px; // 1em =  16px
+		}
+		#resultado {
+			margin-top:20px;
+			margin-bottom:20px;
+			font-weight:bold;
+		}
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>Mensaje</h1>
+
+  <button id="callback-btn">Haga click aqui</button>
+
+    <script>
+	
+   
+	  document.querySelector("#callback-btn")
+	  .addEventListener("click",function(){
+	  alert("el usuario ha hecho click en el boton");});
+    </script>
+
+  </body>
+
+</html>

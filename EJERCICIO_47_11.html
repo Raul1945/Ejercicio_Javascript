@@ -1,0 +1,37 @@
+﻿<!Doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Numeros Primos</title>
+	<style>
+		body {
+			font-family: verdana;
+		}
+
+		imput,
+		button {
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Numeros primos</h1>
+	<input type="number" id="numero" placeholder="introduce un numero" >
+	<button onclick="calcularDoble()">Calcular</button>
+	<p id="resultado"></p>
+	<script>
+	function calcularDoble(){
+	const numero= parseInt(document.getElementById("numero").value);
+	const resultado= parseInt(document.getElementById("resultado").resultado);
+	
+	if (numero <0) {
+	   resultado.innerHTML = "se ha interrumpido en ciclo de repeticiones";
+	   return;}
+	 else if (numero==0) {
+	 resultado.innerHTML = " el programa ha finalizado";
+	 return;}
+	 else { let doble= numero * 2;
+	  resultado.innerHTML = " el doble de" +numero+ "es" +doble;}
+	}

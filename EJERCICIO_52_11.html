@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Calcular descuento</title>
+  
+	<style>
+		body {
+			font-family:Arial,sans-serif;
+			text-align:center;
+		}
+		input,button {
+			font-size:20px;
+			margin-top:20px;
+		}
+		#resultado {
+			margin-top:20px;
+			margin-bottom:20px;
+			font-weight:bold;
+		}
+	</style>
+  
+</head>
+
+<body>
+  
+	
+		<b><center><h1>semaforo</h1></br></br>
+		<label for = "colorInput">seleccione un color:</label><input type="text" id="colorInput"></br></br>
+		<button onclick="colorSemaforo()">Semaforo</button></b>
+		<p id="resultado"></p></center>
+	
+<script type="text/javascript">
+function colorSemaforo(){
+var colorInput = document.getElementById("color");
+  var resultado = document.getElementById("resultado");
+  
+const color= colorInput.value.toLowerCase().trim();
+
+  var semaforo;
+  switch(color){
+  case "verde":
+  semaforo= "continue";
+  break;
+  case "amarillo":
+  semaforo= "precaución";
+  break;
+  case "rojo":
+  semaforo= "detente";
+  break;}
+    resultado.textContent = semaforo;}
+	
+	</script>
+
+</body>
+
+</html>
+	
+	
+	
+	

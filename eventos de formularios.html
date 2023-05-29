@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head></head>
+<body>
+
+
+
+
+
+
+
+<form>
+
+<fieldset>
+
+<legend>button type</legend>
+<label for="nombre">Nombre</label>
+<input type="text" id="nombre" name="nombre" onchange="alert('El valor ha cambiado')"  onblur="console.log('El campo ha perdido el foco')" onfocus="console.log('El campo ha recibido el foco')"></br></br>
+
+<label for="correoe">Introduce tu correo electrónico</label>
+<input type="email" id="correoe" name="correoe" onchange="alert('El valor ha cambiado')"  onblur="console.log('El campo ha perdido el foco')" onfocus="console.log('El campo ha recibido el foco')"></br></br>
+
+<label for="contraseña">Password</label>
+<input type="password" id="pwd" name="pwd"   onblur="console.log('El campo ha perdido el foco')"></br></br>
+
+<label for="comentario">Comentario</br></label>
+<textarea id="observaciones" name="observaciones" cols="100" rows="10" onselect="alert('Texto seleccionado')"></textarea></br>
+
+<button type="submit" value="enviar" onsubmit="alert('submit!')">Enviar</button>
+<button type="reset" value="resetear" onreset="alert('Formulario restablecido')">Resetear</button>
+
+</fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

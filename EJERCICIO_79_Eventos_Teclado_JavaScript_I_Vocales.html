@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Eventos de Teclado en JavaScript </title>
+  </head>
+
+<body>
+  <div id="mensaje"></div>
+
+<script>
+const mensaje = document.getElementById("mensaje");
+document.addEventListener('keydown', function(event) {
+if (event.keyCode >=8 && <=222) { 
+ mensaje.innerHTML = "¡Presionaste la tecla"+event;}
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

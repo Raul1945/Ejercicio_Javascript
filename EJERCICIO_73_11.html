@@ -1,0 +1,26 @@
+﻿<!Doctype html>
+<html lang= "es">
+<body>
+<center><h1>Repeticion de los números del array</h1>
+<div id = "items"></div>
+<script>
+const numbers = [];
+const arrayLength = 8;
+
+for (let i = 0; i < arrayLength; i++) {
+const randomNumber = Math.floor(Math.random()*10)+1;
+numbers.push(randomNumber);}
+//const items = Array.from({length: 8}, () => Math.floor(Math.random()*10)+1);  ES OTRA FORMA DE HACERLO
+
+
+const frecuencias = numbers.reduce((objeto, elemento)=> {//objeto hace de acumulador 
+if (!objeto[elemento]){
+objeto[elemento] = 1}
+else{
+objeto[elemento] = objeto[elemento] +1} //objeto[elemento] +=1 UNA FORMA DE REDUCIR CÓDIGO
+return objeto},{})
+console.log(numbers);
+console.log(frecuencias);
+</script>
+</body>
+</html>

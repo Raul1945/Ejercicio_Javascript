@@ -1,0 +1,50 @@
+﻿<!Doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Multiplicacion</title>
+	<style>
+		body {
+			font-family: verdana;
+		}
+
+		imput,
+		button {
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<center><h1>MULTIPLICADORES</h1>
+	<input type="number" id="numero" placeholder="introduce un numero" ></br></br>
+	<input type="number2" id="numero2" placeholder="introduce un numero" ></br></br>
+	<input type="number3" id="numero3" placeholder="introduce un numero" ></br></br>
+	<button onclick="mostrarMultiplicacion()">Multiplicar</button></center>
+	<p id="resultado"></p>
+	
+	<script>
+function mostrarMultiplicacion(){
+const numero= parseInt(document.getElementById("numero").value);
+const numero2= parseInt(document.getElementById("numero2").value);
+const numero3= parseInt(document.getElementById("numero3").value);
+
+const resultado = numero * numero2 * numero3;
+document.getElementById("resultado").innerHTML = "el resultado es: " + resultado;; }
+</script>
+</body>
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</script>

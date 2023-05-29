@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Suma de números</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        input, button {
+            font-size: 1.2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Suma de números</h1>
+    <p>Introduce números uno a uno. Para finalizar, introduce el número cero.</p>
+    <input type="number" id="entradaNumero" placeholder="Introduce un número">
+    <button onclick="agregarNumero()">Agregar</button>
+    <div id="resultado"></div>
+
+ 	<script>
+    let numeros = [];
+    let sumaTotal = 0;
+
+    function agregarNumero() {
+        let numeroIntroducido = parseInt(document.getElementById("entradaNumero").value);
+        if (numeroIntroducido === 0) {
+            for (let i = 0; i < numeros.length; i++) {
+                sumaTotal += numeros[i];
+            }
+            document.getElementById("resultado").innerHTML = "La suma total es: " + sumaTotal;
+        } else {
+            numeros.push(numeroIntroducido);
+        }
+        document.getElementById("entradaNumero").value = "";
+    }
+	</script>
+
+</body>
+
+</html>

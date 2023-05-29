@@ -1,0 +1,28 @@
+﻿<!Doctype html>
+<html lang= "es">
+<body>
+<center><h1>Suma de los cuadrados</h1>
+<div id = "numeros"></div>
+<div id = "resultado" ></div></center>
+
+
+<script>
+const numbers = [];
+const arrayLength = 5;
+
+for (let i = 0; i < arrayLength; i++) {
+const randomNumber = Math.floor(Math.random()*10)+1;//el 10 es para que salgan numeros enteros y el 1 es para que no salga el 0
+numbers.push(randomNumber);}
+
+let suma = 0;
+for (let i =0; i <numbers.length; i++) {
+const number = numbers[i];
+suma = suma + number **2;}
+
+document.getElementById('numeros').innerText = 'Los numeros del array son: ' + numbers.join();// el jpin nos genera una cadena de numeros con comas
+
+document.getElementById('resultado').innerText ='El resultado es ' +suma;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Eventos de Ventana </title>
+  </head>
+
+<body>
+  <h1 id="mensaje">Cambia el tamaño de la ventana</h1>
+
+<script>
+var mensaje = document.getElementById('mensaje')
+var ventana=window
+ventana.onresize = function(){
+mensaje.innerHTML = 'Tamaño de la ventana' +ventana.innerWidth + 'x' + ventana.innerHeight;};
+
+
+</script>
+</body>
+</html>
