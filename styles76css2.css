@@ -1,0 +1,5 @@
+﻿ul.a {list-style-type:circle;list-style-position:outside;list-style-image:url('gif1.gif');}
+ul.b {list-style-type:disc;list-style-position:inside;}
+ul.c {list-style-type:square;list-style-position:outside;list-style-image:url('gif1.gif');}
+ul.d {list-style-type:none;list-style-position:inside;}
+
